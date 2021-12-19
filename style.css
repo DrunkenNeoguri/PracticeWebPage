@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+
+/**navigation(topmenu)**/
+.menu_bar {
+    position:sticky;
+    top:0;
+    background:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    opacity: 0.8;
+}
+
+.top_menu {
+  align-items: center;
+  display:grid;
+  grid-template-columns: 150px 1fr;
+
+}
+
+.left_menu {
+  margin:0;
+  padding-left:15px;
+}
+
+.left_menu img {
+  width:70px;
+  height:87px;
+  opacity: 1;
+}
+
+.right_menu {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right:15px;
+  font-size:25px;
+  font-weight:600;
+}
+
+.right_menu a {
+  color:black;
+  font-family:"Calibri", sans-serif;
+  text-decoration:none;
+  padding-left:10px;
+  padding-right:10px;
+  margin:0px;
+  opacity: 1;
+}
+
+/**responsive_check**/
+@media(max-width:742px) {
+  .left_menu {
+    padding-bottom:15px;
+  }
+  .right_menu a {
+    line-height:50px;
+  }
+}
+
+.toppage_img {
+ padding:30px;
+ padding-top:10px;
+ padding-bottom:100px;
+}
+
+.toppage_img img {
+ text-align:center;
+ width:100%;
+}
+
+
+
+
+
+/**section-introduction**/
+.introduction {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding:30px;
+  padding-bottom:100px;
+}
+
+/**introtext_LizNoir-text**/
+.intro_LizNoir, .intro_idolypride {
+  margin:0px;
+  padding:30px;
+  padding-top:60px;
+}
+
+.intro_LizNoir h2, .intro_LizNoir p {
+  font-family:"segoe UI", sans-serif;
+  font-weight:500;
+  margin:0px;
+  padding:10px;
+}
+
+.intro_LizNoir h2 {
+  font-size:30px;
+}
+
+.intro_LizNoir p {
+  font-size:18px;
+}
+
+.intro_LizNoir {
+  margin-bottom:50px;
+}
+
+/**introtext_idolypride**/
+.intro_idolypride {
+  padding-top:0px;
+}
+
+.intro_idolypride h3, .intro_idolypride p {
+  font-family:"Malgun Gothic", sans-serif;
+  font-size:14px;
+  margin:0px;
+  padding:10px;
+}
+
+/**intro_img**/
+.intro_img_LizNoir, .intro_img_idolypride {
+  padding-right:15px;
+}
+
+/**css의 의문점: class로 부른 태그에서 왜 더 선택자를 지정해야 기준이 먹히는지?
+-> 근데 이제 좀 알 거 같음... 이미지로 비교해서 공간 확인하면 감이 좀 옴...
+전체를 규격화하는 거랑 부분을 규격화하는 것에는 검사에서 보니 확실히 차이가 좀
+있더라..**/
+.intro_img_LizNoir img, .intro_img_idolypride img {
+  width:100%;
+  padding:15px;
+  padding-top:70px;
+}
+
+.intro_img_idolypride img {
+  padding-top:0px;
+}
+
+/**responsive_check**/
+@media(max-width:1115px) {
+  .introduction {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  .intro_LizNoir {
+    padding-top:30px;
+    margin-bottom:60px;
+    order:2;
+  }
+
+  .intro_LizNoir h2, .intro_LizNoir p, .introduction_text h3 {
+    text-align:center;
+
+  }
+
+  .intro_img_LizNoir {
+    order:1;
+    padding-right:0px;
+  }
+
+  .intro_img_LizNoir img {
+    padding:0px;
+  }
+
+  .intro_idolypride {
+    text-align: center;
+    order:4;
+  }
+
+  .intro_img_idolypride {
+    order:3;
+  }
+}
+
+
+
+
+
+/**introduction Member**/
+.intro_member {
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right:10px;
+
+}
+
+#rio, #aoi, #ai, #kokoro {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  padding:0px;
+  border-radius: 20px;
+  margin:20px;
+  margin-bottom: 120px;
+  font-family:"Malgun Gothic", sans-serif;
+}
+
+/**여기가 문제인데.. . 사진을 어떻게 크롭하고 공간을 줄이느냐..**/
+#rio .img, #aoi .img, #ai .img, #kokoro .img {
+  display:block;
+  background-size:cover;
+  padding-top: 30%;
+}
+
+#rio {
+  background: #b34e86;
+}
+
+#aoi {
+  background: #747ebc;
+}
+
+#ai {
+  background: #80cef5;
+}
+
+#kokoro {
+  background: #f29db4;
+}
+
+#rio .img {
+  background-image: url('https://idolypride.jp/shared/img/character/c14_main_a_pc.png');
+}
+
+#aoi .img {
+  background-image: url('https://idolypride.jp/shared/img/character/c15_main_a_pc.png');
+}
+
+#ai .img {
+  background-image: url('https://idolypride.jp/shared/img/character/c16_main_a_pc.png');
+}
+
+#kokoro .img {
+  background-image: url('https://idolypride.jp/shared/img/character/c17_main_a_pc.png');
+}
+
+.profile_main {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction:column;
+}
+
+.profile1, .profile2 {
+  padding:10px;
+  padding-left:20px;
+  color:white;
+  font-size:15px;
+  font-family: sans-serif;
+}
+
+.profile1 h3 {
+  font-family: sans-serif;
+  padding:4px;
+  border-bottom: 3px solid white;
+  font-size: 24px;
+  margin-bottom:0px;
+  color:white;
+}
+
+.profile1 h4 {
+  font-family: sans-serif;
+  margin-top:2px;
+  padding:4px;
+  color:white;
+}
+
+.profile2 dl {
+  display: table;
+  width: 100%;
+  font-size: 13px;
+}
+
+.profile2 dt, dd {
+  padding-bottom: 7px;
+  border-bottom: 1px solid white;
+}
+
+.profile2 dt {
+  display: table-cell;
+  width: 30%;
+  position: relative;
+}
+
+.profile2 dd {
+  margin-left:15px;
+  position: relative;
+}
+
+/**responsive_check**/
+@media(max-width:1136px) {
+  .intro_member{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:578px) {
+  .intro_member, #rio, #aoi, #ai, #kokoro {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  #rio .img, #aoi .img, #ai .img, #kokoro .img {
+    display:block;
+    background-size:cover;
+    padding-top: 120%;
+  }
+
+  .profile1, .profile2 {
+    padding-top:0px;
+    padding-bottom:0px;
+    color:white;
+    font-size:15px;
+    font-family: sans-serif;
+  }
+
+  .img {
+    order:1;
+  }
+
+  .profile_main {
+    order:2;
+  }
+}
