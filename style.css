@@ -203,6 +203,12 @@
 }
 
 /**여기가 문제인데.. . 사진을 어떻게 크롭하고 공간을 줄이느냐..**/
+
+.member_title h2 {
+  margin:40px;
+  font-size: 40px;
+}
+
 #rio .img, #aoi .img, #ai .img, #kokoro .img {
   display:block;
   background-size:cover;
@@ -329,4 +335,96 @@
   .profile_main {
     order:2;
   }
+}
+
+
+
+
+
+/**section-Discography**/
+
+.discography h2 {
+  margin:40px;
+  font-size: 40px;
+}
+
+.album_list ul {
+  list-style:none;
+  display:grid;
+  grid-template-columns: 400px 1fr;
+  grid-row-gap: 50px;
+}
+
+.thumbnail {
+  text-align: center;
+}
+
+.description p
+{
+ font-family: "Nanum Gothic",sans-serif;
+}
+
+.category, .release_date, .title, .prize, .catalog {
+  margin:0px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.release_date, .prize, .catalog {
+  font-size:15px;
+}
+
+.tracklist {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left:30px;
+}
+
+.comment
+ {
+  font-size:12px;
+  padding-right:20%;
+}
+
+.Single .category {
+  padding-left: 8px;
+  padding-right:8px;
+  display:inline;
+  font-size: 12px;
+  background-color:darkblue;
+  color:white;
+}
+
+.Other .category {
+  padding-left: 8px;
+  padding-right:8px;
+  display:inline;
+  font-size: 12px;
+  background-color:darkslategray;
+  color:white;
+}
+
+.discography h4 {
+  margin: 50px;
+  font-size:24px;
+}
+
+.discography img {
+  width:300px;
+}
+
+@media(max-width:720px) {
+  .album_list ul {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:1136px) {
+  .comment {
+   padding-right:10%;
+ } 
 }
