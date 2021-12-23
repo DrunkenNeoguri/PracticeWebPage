@@ -81,6 +81,13 @@ h2 {
   font-size: 40px;
 }
 
+@media(max-width:742px) {
+  h2 {
+    margin:20px;
+    font-size: 40px;
+  }
+}
+
 
 
 
@@ -381,22 +388,20 @@ h2 {
   padding-right:20%;
 }
 
-.Single .category {
+.category {
   padding-left: 8px;
   padding-right:8px;
   display:inline;
   font-size: 12px;
-  background-color:darkblue;
   color:white;
 }
 
+.Single .category {
+  background-color:darkblue;
+} 
+
 .Other .category {
-  padding-left: 8px;
-  padding-right:8px;
-  display:inline;
-  font-size: 12px;
   background-color:darkslategray;
-  color:white;
 }
 
 .discography h4 {
@@ -413,6 +418,12 @@ h2 {
   .album_list ul {
     display:grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 0px;
+    padding:20px;
+  }
+
+  .discography h4 {
+    margin: 26px;
   }
 }
 
