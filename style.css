@@ -73,10 +73,17 @@
 
 
 
+/**common**/
+h2 {
+  margin:40px;
+  font-size: 40px;
+}
+
+
 
 
 /**section-introduction**/
-.introduction {
+.intro_description {
   display:grid;
   grid-template-columns: 1fr 1fr;
   padding:30px;
@@ -87,18 +94,14 @@
 .intro_LizNoir, .intro_idolypride {
   margin:0px;
   padding:30px;
-  padding-top:60px;
+  padding-top:0px;
 }
 
-.intro_LizNoir h2, .intro_LizNoir p {
+.intro_LizNoir p {
   font-family:"segoe UI", sans-serif;
   font-weight:500;
   margin:0px;
   padding:10px;
-}
-
-.intro_LizNoir h2 {
-  font-size:30px;
 }
 
 .intro_LizNoir p {
@@ -133,7 +136,7 @@
 .intro_img_LizNoir img, .intro_img_idolypride img {
   width:100%;
   padding:15px;
-  padding-top:70px;
+  padding-top:0px;
 }
 
 .intro_img_idolypride img {
@@ -142,7 +145,7 @@
 
 /**responsive_check**/
 @media(max-width:1115px) {
-  .introduction {
+  .intro_description {
     display:grid;
     grid-template-columns: 1fr;
   }
@@ -153,7 +156,7 @@
     order:2;
   }
 
-  .intro_LizNoir h2, .intro_LizNoir p, .introduction_text h3 {
+  .intro_LizNoir p, .introduction_text h3 {
     text-align:center;
 
   }
@@ -200,13 +203,6 @@
   margin:20px;
   margin-bottom: 120px;
   font-family:"Malgun Gothic", sans-serif;
-}
-
-/**여기가 문제인데.. . 사진을 어떻게 크롭하고 공간을 줄이느냐..**/
-
-.member_title h2 {
-  margin:40px;
-  font-size: 40px;
 }
 
 #rio .img, #aoi .img, #ai .img, #kokoro .img {
@@ -342,12 +338,6 @@
 
 
 /**section-Discography**/
-
-.discography h2 {
-  margin:40px;
-  font-size: 40px;
-}
-
 .album_list ul {
   list-style:none;
   display:grid;
@@ -416,6 +406,7 @@
   width:300px;
 }
 
+/**responsive_check**/
 @media(max-width:720px) {
   .album_list ul {
     display:grid;
