@@ -1,14 +1,95 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:100;
+  src: url(./NanumSquareL.eot)
+       url(./NanumSquareL.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareL.woff) format('woff'),
+       url(./NanumSquareL.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:500;
+  src: url(./NanumSquareR.eot)
+       url(./NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareR.woff) format('woff'),
+       url(./NanumSquareR.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:600;
+  src: url(./NanumSquareB.eot)
+       url(./NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareB.woff) format('woff'),
+       url(./NanumSquareB.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:700;
+  src: url(./NanumSquareEB.eot)
+       url(./NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareEB.woff) format('woff'),
+       url(./NanumSquareEB.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight:100;
+  src: url(./NanumSquareRoundL.eot)
+       url(./NanumSquareRoundL.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareRoundL.woff) format('woff'),
+       url(./NanumSquareRoundL.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight:500;
+  src: url(./NanumSquareRoundR.eot)
+       url(./NanumSquareRoundR.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareRoundR.woff) format('woff'),
+       url(./NanumSquareRoundR.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight:600;
+  src: url(./NanumSquareRoundB.eot)
+       url(./NanumSquareRoundB.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareRoundB.woff) format('woff'),
+       url(./NanumSquareRoundB.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight:700;
+  src: url(./NanumSquareRoundEB.eot)
+       url(./NanumSquareRoundEB.eot?#iefix) format('embedded-opentype'),
+       url(./NanumSquareRoundEB.woff) format('woff'),
+       url(./NanumSquareRoundEB.ttf) format('truetype');
+  unicode-range: U+0-10FFFF;
+}
 
 /**navigation(topmenu)**/
 .menu_bar {
     position:sticky;
     top:0;
+    width:100%;
     background:white;
     padding-top:10px;
     padding-bottom:10px;
     opacity: 0.8;
+    z-index: 999;
 }
 
 .top_menu {
@@ -42,7 +123,8 @@
 
 .right_menu a {
   color:black;
-  font-family:"Calibri", sans-serif;
+  font-family:"NanumSquareRound", sans-serif;
+  font-weight:800;
   text-decoration:none;
   padding-left:10px;
   padding-right:10px;
@@ -56,7 +138,8 @@
     padding-bottom:15px;
   }
   .right_menu a {
-    line-height:50px;
+    line-height:30px;
+    font-size: 18px;
   }
 }
 
@@ -71,12 +154,10 @@
  width:100%;
 }
 
-
-
-
-
 /**common**/
 h2 {
+  font-family: 'NanumSquareRound';
+  font-weight:800;
   margin:40px;
   font-size: 40px;
 }
@@ -87,8 +168,6 @@ h2 {
     font-size: 40px;
   }
 }
-
-
 
 
 /**section-introduction**/
@@ -107,7 +186,7 @@ h2 {
 }
 
 .intro_LizNoir p {
-  font-family:"segoe UI", sans-serif;
+  font-family:"NanumSquare", sans-serif;
   font-weight:500;
   margin:0px;
   padding:10px;
@@ -127,7 +206,7 @@ h2 {
 }
 
 .intro_idolypride h3, .intro_idolypride p {
-  font-family:"Malgun Gothic", sans-serif;
+  font-family:"NanumSquare", sans-serif;
   font-size:14px;
   margin:0px;
   padding:10px;
@@ -211,7 +290,7 @@ h2 {
   border-radius: 20px;
   margin:20px;
   margin-bottom: 120px;
-  font-family:"Malgun Gothic", sans-serif;
+  font-family:"NanumSquare", sans-serif;
 }
 
 #rio .img, #aoi .img, #ai .img, #kokoro .img {
@@ -263,11 +342,9 @@ h2 {
   padding-left:20px;
   color:white;
   font-size:15px;
-  font-family: sans-serif;
 }
 
 .profile1 h3 {
-  font-family: sans-serif;
   padding:4px;
   border-bottom: 3px solid white;
   font-size: 24px;
@@ -276,7 +353,6 @@ h2 {
 }
 
 .profile1 h4 {
-  font-family: sans-serif;
   margin-top:2px;
   padding:4px;
   color:white;
@@ -330,7 +406,6 @@ h2 {
     padding-bottom:0px;
     color:white;
     font-size:15px;
-    font-family: sans-serif;
   }
 
   .img {
@@ -360,7 +435,7 @@ h2 {
 
 .description p
 {
- font-family: "Nanum Gothic",sans-serif;
+ font-family: "NanumSquare",sans-serif;
 }
 
 .category, .release_date, .title, .prize, .catalog {
@@ -398,13 +473,15 @@ h2 {
 
 .Single .category {
   background-color:darkblue;
-} 
+}
 
 .Other .category {
   background-color:darkslategray;
 }
 
 .discography h4 {
+  font-family: "NanumSquareRound", sans-serif;
+  font-weight:700;
   margin: 50px;
   font-size:24px;
 }
@@ -430,5 +507,78 @@ h2 {
 @media(max-width:1136px) {
   .comment {
    padding-right:10%;
- } 
+ }
+}
+
+
+
+
+
+/**section-video**/
+
+.video_list {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: 3fr;
+  gap: 30px 20px;
+  padding:0;
+  margin-top:30px;
+  margin-right:50px;
+  margin-left:50px;
+}
+
+.video_list .music_video {
+  position:relative;
+  padding-top:30px;
+  padding-bottom:53.05%;
+/**padding-bottom:56.25%;**/
+  height:0;
+  overflow:hidden;
+}
+
+.video_list .music_video iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.video_list .video_description {
+  padding: 16px;
+  padding-top: 40px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  word-break:keep-all;
+}
+
+/**responsive_check**/
+
+@media(max-width:944px) {
+  .video_list {
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    text-align: center;
+    gap: 20px 0px;
+  }
+
+  .video_list .music_video {
+    position:relative;
+    padding:10px;
+    padding-bottom:30%;
+    padding-top:26.5%;
+    height:0;
+    overflow:hidden;
+    /**min-height: 315px;**/
+  }
+
+  .video_list .video_description {
+    word-break:keep-all;
+    padding-top: 10px;
+    padding-bottom:50px;
+    font-size:20px;
+  }
+
 }
